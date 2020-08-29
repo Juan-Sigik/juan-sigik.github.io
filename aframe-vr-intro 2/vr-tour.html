@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Attempt 11</title>
+	<title>Attempt 12</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<style type="text/css">
 		#information {
@@ -21,6 +21,25 @@
       border-style: inset;
 
 		}
+		.glow {
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+  }
+  to {
+    text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 
+                 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
 	</style>
 </head>
 <body>
@@ -36,7 +55,7 @@
 </a-scene>
 
 <div id="information" onclick="document.querySelector('#information').style.display = 'none';">
-  <h1>The Power Stone</h1>
+  <h1 class="glow">The Power Stone</h1>
 	<h2> The Aether</h2>
   <h3>The Reality Stone grants the user power to manipulate matter.
 	  In Thor: The Dark World the villain Malekith (Christopher Eccleston) wants to use this red liquid stuff called Aether to turn matter into dark matter 
