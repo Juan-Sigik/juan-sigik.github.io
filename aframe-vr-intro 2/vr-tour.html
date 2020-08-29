@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Attempt 32</title>
+	<title>Attempt 2</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 	<style type="text/css">
@@ -66,24 +66,24 @@
 
     <!-- <a-box id="thatthing" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-4.29762 2.16983 -19.89708" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box> -->
 
-    <a-box id="thatthing" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-15.18044 2.16983 -15.04903" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
+    <a-box id="reality" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-15.18044 2.16983 -15.04903" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
 <!-- 
     <a-box id="thatthing" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-3.29762 2.16983 -19.89708" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box> -->
 
-  <a-box id="thatthing" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-15.00039 2.16983 0.01721" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
+  <a-box id="space" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-15.00039 2.16983 0.01721" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
 
   <!--   <a-box id="thatthing" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-2.29762 2.16983 -19.89708" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box> -->
 
-  <a-box id="thatthing" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-0.06143 2.16983 14.78511" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
+  <a-box id="time" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-0.06143 2.16983 14.78511" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
 
    <!--  <a-box id="thatthing" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-1.29762 2.16983 -19.89708" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box> -->
 
-   <a-box id="thatthing" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-0.03044 2.16983 -14.82527" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
+   <a-box id="soul" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-0.03044 2.16983 -14.82527" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
 
     <!-- <a-box id="thatthing" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="-0.29762 2.16983 -19.89708" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
  -->
 
- <a-box id="thatthing" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="14.68491 2.16983 -0.05737" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
+ <a-box id="mind" color="red" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" position="14.68491 2.16983 -0.05737" material="color: #6657ff" geometry="primitive: dodecahedron"></a-box>
 
 
 
@@ -92,7 +92,7 @@
   <a-sky src="space3.jpg"></a-sky>
 </a-scene>
 
-<div id="information" onclick="document.querySelector('#information').style.display = 'none';">
+<div id="orb" onclick="document.querySelector('#orb').style.display = 'none';">
   <h1 class="glow">the power stone</h1>
   <h2>the orb</h2>
   <h3>the sower stone bestows upon its holder a lot of energy—the sort of energy that you could use to destroy an entire planet. 
@@ -100,12 +100,24 @@
     ronan the accuser (lee pace) steals it from him and threatens to wipe out an entire race.</h3>
 </div>
 
+<div id="aether" onclick="document.querySelector('#aether').style.display = 'none';">
+  <h1 class="glow">the reality stone</h1>
+  <h2>the aether</h2>
+  <h3>the reality stone grants the user power to manipulate matter. in thor: the dark world the villain malekith (christopher eccleston) wants to use this red liquid stuff called aether to turn matter into dark matter because he’s evil. and do you really need a better reason? it turns out that the aether is a manifestation of the reality stone.</h3>
+</div>
+
 <script>
   var power = document.querySelector('#power');
-  var thisthing = document.querySelector('#thisthing');
+  // var thisthing = document.querySelector('#thisthing');
+  var reality = document.querySelector('#reality')
 
   power.addEventListener('fusing', function (evt) {
-      document.querySelector('#information').style.display = 'block';
+      document.querySelector('#orb').style.display = 'block';
+
+  reality.addEventListener('fusing', function (evt) {
+      document.querySelector('#aether').style.display = 'block';
+
+
   });
 
   
@@ -114,3 +126,4 @@
 
 </body>
 </html>
+
