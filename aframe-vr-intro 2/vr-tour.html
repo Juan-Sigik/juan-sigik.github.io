@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Attempt 17</title>
+	<title>Attempt 18</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 	<style type="text/css">
-		#orb {
+	
+          #orb {
 			position: fixed;
 			top: 20%;
 			left: 10%;
@@ -23,7 +24,95 @@
 
 		}
 
-    #aether {
+        #aether {
+      position: fixed;
+      top: 20%;
+      left: 10%;
+      width: 70%;
+      height: 55%;
+      background: linear-gradient(90deg, rgba(177, 64, 200, 0.25) 0%, 
+                    rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 0.25) 100%);
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 35px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: none;
+      border-style: inset;
+
+    }
+	#tesseract {
+      position: fixed;
+      top: 20%;
+      left: 10%;
+      width: 70%;
+      height: 55%;
+      background: linear-gradient(90deg, rgba(177, 64, 200, 0.25) 0%, 
+                    rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 0.25) 100%);
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 35px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: none;
+      border-style: inset;
+
+    }
+		
+	#aether {
+      position: fixed;
+      top: 20%;
+      left: 10%;
+      width: 70%;
+      height: 55%;
+      background: linear-gradient(90deg, rgba(177, 64, 200, 0.25) 0%, 
+                    rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 0.25) 100%);
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 35px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: none;
+      border-style: inset;
+
+    }
+		
+	#eye {
+      position: fixed;
+      top: 20%;
+      left: 10%;
+      width: 70%;
+      height: 55%;
+      background: linear-gradient(90deg, rgba(177, 64, 200, 0.25) 0%, 
+                    rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 0.25) 100%);
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 35px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: none;
+      border-style: inset;
+
+    }
+		
+		#vision {
+      position: fixed;
+      top: 20%;
+      left: 10%;
+      width: 70%;
+      height: 55%;
+      background: linear-gradient(90deg, rgba(177, 64, 200, 0.25) 0%, 
+                    rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 0.25) 100%);
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 35px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: none;
+      border-style: inset;
+
+    }
+		#widow {
       position: fixed;
       top: 20%;
       left: 10%;
@@ -111,9 +200,35 @@
   <h3>the reality stone grants the user power to manipulate matter. in thor: the dark world the villain malekith (christopher eccleston) wants to use this red liquid stuff called aether to turn matter into dark matter because he’s evil. and do you really need a better reason? it turns out that the aether is a manifestation of the reality stone.</h3>
 </div>
 
+<div id="tesseract" onclick="document.querySelector('#tesseract').style.display = 'none';">
+  <h1 class="glow">the space stone</h1>
+  <h2>the tesseract</h2>
+  <h3>the space stone gives the user power over space. anyone holding the space stone can create a portal from one part of the universe to another. in the marvel films, the space stone is hidden inside a blue cube called the tesseract.</h3>
+</div>
+	<div id="eye" onclick="document.querySelector('#eye').style.display = 'none';">
+  <h1 class="glow">the time stone</h1>
+  <h2>the eye of agamotto</h2>
+  <h3>the time stone grants its owner the power to re-wind or fast-forward time. stephen strange (benedict cumberbatch) discovers it in the eye of agomoto pendant in the library of kamar-taj, where he trains in the mystic arts in doctor strange. he uses the stone at the end of the film to trap the villain dormammu in a time loop so that dormammu can’t destroy the earth.</h3>
+</div>
+	<div id="vision" onclick="document.querySelector('#vision').style.display = 'none';">
+  <h1 class="glow">the mind stone</h1>
+  <h2>the scepter</h2>
+  <h3>the mind stone allows the user to control the minds of others. we first see it as a blue orb in loki’s scepter in 2012’s the avengers. whenever loki touches someone with the scepter, he can control what they do. thanos gives the mind stone to loki, which places a lot of faith in loki, a hilarious but not particularly accomplished villain. weird decision, thanos.</h3>
+</div>
+	<div id="widow" onclick="document.querySelector('#widow').style.display = 'none';">
+  <h1 class="glow">the soul stone</h1>
+  <h2>the unknown</h2>
+  <h3>in infinity war, thanos travels with gamora to the planet vormir, where the soul stone is kept. there they encounter red skull, the villain from the first captain america movie, who has been doomed to guard but not use the soul stone after trying to handle the space stone himself. red skull tells thanos that he needs to sacrifice something he loves to attain the gem, and thanos kills gamora.</h3>
+</div>
+	
 <script>
   var power = document.querySelector('#power');
-  var reality = document.querySelector('#reality')
+  var reality = document.querySelector('#reality') ;
+  var space = document.querySelector('#space') ;
+  var time = document.querySelector('#time');
+  var mind = document.querySelector('#mind'); 
+  var soul = document.querySelector('#soul') ;
+	
 
   power.addEventListener('fusing', function (evt) {
       document.querySelector('#orb').style.display = 'block'; 
@@ -122,13 +237,25 @@ background.setAttribute("src", "space2.jpg");
   
   });
 	
-  reality.addEventListener('fusing', function (evt) {
+         reality.addEventListener('fusing', function (evt) {
       document.querySelector('#aether').style.display = 'block';
   });
+	space.addEventListener('fusing', function (evt) {
+      document.querySelector('#tesseract').style.display = 'block';
+  });
 	
+	time.addEventListener('fusing', function (evt) {
+      document.querySelector('#eye').style.display = 'block';
+  });
 
+	mind.addEventListener('fusing', function (evt) {
+      document.querySelector('#vision').style.display = 'block';
+  });
+	
+	soul.addEventListener('fusing', function (evt) {
+      document.querySelector('#widow').style.display = 'block';
+  });
   
-
 </script> 
 
 </body>
