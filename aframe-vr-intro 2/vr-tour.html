@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Attempt 15</title>
+	<title>Attempt 16</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 	<style type="text/css">
@@ -94,7 +94,7 @@
 	
 
  
-  <a-sky src="space.jpg"></a-sky>
+  <a-sky id="bg" src="space.jpg"></a-sky>
 </a-scene>
 
 <div id="orb" onclick="document.querySelector('#orb').style.display = 'none';">
@@ -116,11 +116,12 @@
   var reality = document.querySelector('#reality')
 
   power.addEventListener('fusing', function (evt) {
-      document.querySelector('#orb').style.display = 'block';  });
+      document.querySelector('#orb').style.display = 'block'; document.querySelector("#bg").src = "space2.jpg";  });
 	
   reality.addEventListener('fusing', function (evt) {
       document.querySelector('#aether').style.display = 'block';
   });
+	
 
   
 
