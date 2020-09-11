@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>VR 13</title>
+	<title>VR 14</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
 	<style type="text/css">
@@ -24,7 +24,7 @@
 		
 		body {
          line-height: 150%;
-         font-size: 25px;
+         font-size: 20px;
 	 font-family: 'Lora', serif;
          color: white;
         }
@@ -62,7 +62,7 @@
   var info = document.querySelector('#info');
   var portal = document.querySelector('#portal');
 
-  thatthing.addEventListener('fusing', function (evt) {
+  info.addEventListener('fusing', function (evt) {
       document.querySelector('#information').style.display = 'block';
       evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
       evt.target.setAttribute('color', 'green');
@@ -70,7 +70,7 @@
 });
 	
 	  portal.addEventListener('fusing', function (evt) {
-		   location.replace('.html');
+		   location.replace('test.html');
 
   
 });
