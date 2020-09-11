@@ -41,7 +41,7 @@
   <a-sky src="Scene05.jpg"></a-sky>
 </a-scene>
 
-<div id="information" onclick="document.querySelector('#information').style.display = 'none';">
+<div id="information" onclick="document.querySelector('#information').style.fadeOut(slow);">
   <h1>Minor Basilica of the Sacred Heart of Jesus</h1>
 <!--   <h3>Lorem ipsum great building</h3> -->
 	<p> The church was built between 1906 and 1911 in an eclectic style, in the place of the demolished St. Bartholomew neoclassical church. 
@@ -59,6 +59,8 @@
       document.querySelector('#information').style.display = 'block';
       evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
       evt.target.setAttribute('color', 'green');
+	 
+});
   });
 
   
