@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>VR 09</title>
+	<title>VR 10</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
 	<style type="text/css">
 		#information{
 			position: fixed;
@@ -24,13 +25,17 @@
 		body {
          line-height: 150%;
          font-size: 15px;
-/*          font-family: 'Major Mono Display', monospace; */
+	 font-family: 'Lora', serif;
          color: white;
         }
 	</style>
 </head>
 <body>
 
+<audio controls>
+  <source src="CITY..mp3" type="audio/mpeg">
+</audio>
+	
 <a-scene >
 	<a-entity id="default_angle" camera position="0 0 0" look-controls wasd-controls> 
 	<a-cursor fuse="true" fuseTimeout="500"></a-cursor>
