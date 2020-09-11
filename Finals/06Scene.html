@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>06Scene</title>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+	<style type="text/css">
+		#information{
+			position: fixed;
+			top: 20%;
+			left: 10%;
+      width: 70%;
+      height: 55%;
+      background-image: url("textbox.png");
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 35px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: none;
+      border-style: inset;
+
+		}
+		
+		body {
+         line-height: 150%;
+         font-size: 20px;
+	 font-family: 'Lora', serif;
+         color: white;
+        }
+	</style>
+</head>
+<body>
+
+<!-- <audio controls>
+  <source src="CITY.mp3" type="audio/mpeg">
+</audio> -->
+	
+<a-scene >
+	<a-entity id="default_angle" camera position="0 0 0" look-controls wasd-controls> 
+	<a-cursor fuse="true" fuseTimeout="500"></a-cursor>
+</a-entity>
+
+  <a-box id="info" color="red" position="-10.72986 4.28212 0.02414"></a-box>
+	
+  <a-box id="portal" color="blue" position="16.17943 0.11887 6.27068"></a-box>
+
+  <a-sky src="Scene06.jpg"></a-sky>
+</a-scene>
+
+<div id="information" onclick="document.querySelector('#information').style.display = 'none';">
+  <h1>Cathedral Basilica of the Assumption, Lviv</h1>
+<!--   <h3>Lorem ipsum great building</h3> -->
+	<p> The Archcathedral Basilica of the Assumption of the Blessed Virgin Mary, usually called simply the Latin Cathedralis a 14th-century Roman Catholic cathedral in Lviv, western Ukraine. It is located in the city's Old Town, in the south western corner of the market square, called Cathedral Square. 
+<br>
+The first church built on this site was a small wooden Roman Catholic church dedicated to the Holy Trinity, built in 1344 and lost in a fire six years later. In 1360, king Casimir III of Poland began the construction of the present day church, built in Gothic style, as the cathedral of the newly created Latin diocese. The church was consecrated in 1405 and the parish was moved here from "Our Lady of the Snows" church. In 1412 the see was transferred from Halych. Construction work continued throughout the 15th century and the Cathedral was finally consecrated in 1481.</p>
+</div>
+
+<script>
+  var info = document.querySelector('#info');
+  var portal = document.querySelector('#portal');
+
+  info.addEventListener('fusing', function (evt) {
+      document.querySelector('#information').style.display = 'block';
+      evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
+      evt.target.setAttribute('color', 'green');
+	 
+});
+
+
+</script> 
+
+</body>
+</html>
