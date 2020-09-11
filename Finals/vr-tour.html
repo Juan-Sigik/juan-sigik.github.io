@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>VR 12</title>
+	<title>VR 13</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
 	<style type="text/css">
@@ -32,16 +32,18 @@
 </head>
 <body>
 
-<audio controls>
+<!-- <audio controls>
   <source src="CITY.mp3" type="audio/mpeg">
-</audio>
+</audio> -->
 	
 <a-scene >
 	<a-entity id="default_angle" camera position="0 0 0" look-controls wasd-controls> 
 	<a-cursor fuse="true" fuseTimeout="500"></a-cursor>
 </a-entity>
 
-  <a-box id="thatthing" color="red" position="-10.72986 4.28212 0.02414"></a-box>
+  <a-box id="info" color="red" position="-10.72986 4.28212 0.02414"></a-box>
+	
+  <a-box id="portal" color="blue" position="-10.72986 6.28212 0.02414"></a-box>
 
   <a-sky src="Scene05.jpg"></a-sky>
 </a-scene>
@@ -57,8 +59,8 @@
 </div>
 
 <script>
-  var thatthing = document.querySelector('#thatthing');
-  var thisthing = document.querySelector('#thisthing');
+  var info = document.querySelector('#info');
+  var portal = document.querySelector('#portal');
 
   thatthing.addEventListener('fusing', function (evt) {
       document.querySelector('#information').style.display = 'block';
@@ -66,9 +68,13 @@
       evt.target.setAttribute('color', 'green');
 	 
 });
+	
+	  portal.addEventListener('fusing', function (evt) {
+		   location.replace('.html');
 
   
-
+});
+	
 </script> 
 
 </body>
