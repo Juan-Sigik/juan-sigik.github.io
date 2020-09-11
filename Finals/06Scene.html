@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>06Scene1</title>
+	<title>06</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
 	<style type="text/css">
@@ -65,6 +65,12 @@ The first church built on this site was a small wooden Roman Catholic church ded
       evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
       evt.target.setAttribute('color', 'green');
 	 
+});
+	
+	 portal.addEventListener('fusing', function (evt) {
+		   location.replace('07Scene.html');
+
+  
 });
 
 
