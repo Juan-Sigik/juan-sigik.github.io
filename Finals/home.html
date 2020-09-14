@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>VR Tour of Indo and Lviv</title>
+	<title>01</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 </head>
 <body>
@@ -29,22 +29,22 @@
   left_box.addEventListener('fusing', function (evt) {
 		evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
 		evt.target.setAttribute('color', 'white');
+	        location.replace('05Scene.html');
   });
 
   right_box.addEventListener('fusing', function (evt) {
 		evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
 		evt.target.setAttribute('color', 'white');
+	        location.replace('Scene01.html');
   });
 
-	left_box.addEventListener('fusing', function (evt) {
-       location.replace('05Scene.html');
-
-});
 	
-		right_box.addEventListener('fusing', function (evt) {
-       location.replace('Scene01.html');
 
-});
+	
+		
+       
+
+
 	
 </script> 
 
