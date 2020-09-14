@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Aframe VR</title>
+	<title>VR Tour of Indo and Lviv</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 </head>
 <body>
@@ -36,6 +36,16 @@
 		evt.target.setAttribute('color', 'white');
   });
 
+	left_box.addEventListener('fusing', function (evt) {
+       location.replace('05Scene.html');
+
+});
+	
+		right_box.addEventListener('fusing', function (evt) {
+       location.replace('Scene01.html');
+
+});
+	
 </script> 
 
 </body>
