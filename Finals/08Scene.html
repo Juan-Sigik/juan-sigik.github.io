@@ -44,6 +44,11 @@
   <a-box id="info" color="red" position="-10.72986 4.28212 0.02414"></a-box>
 	
 <a-box id="portal" src="download-free-png-walk-through-the-red-door-for-autism-foundation-red-door-png-1740_3574.png" position="1.56715 0.00733 26.76793" material="" geometry="" scale="1.48 2.95 0.00001"></a-box>
+	
+<a-box id="home" src="blu.jpg" position="1.56715 0.00733 26.76793" material="" geometry="" scale="1.48 4.95 0.00001"></a-box>
+	
+	
+	
   <a-sky src="Scene08.jpg"></a-sky>
 </a-scene>
 
@@ -59,12 +64,23 @@
 <script>
   var info = document.querySelector('#info');
   var portal = document.querySelector('#portal');
+  var home = document.querySelector('#home');
 
   info.addEventListener('fusing', function (evt) {
       document.querySelector('#information').style.display = 'block';
       evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
       evt.target.setAttribute('color', 'green');
 	 
+});
+	
+	portal.addEventListener('fusing', function (evt) {
+       location.replace('Scene01.html');
+
+});
+	
+	home.addEventListener('fusing', function (evt) {
+       location.replace('home.html');
+
 });
 
   
