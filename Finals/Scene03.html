@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>03</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+  <style type="text/css">
+    #information{
+      position: fixed;
+      top: 20%;
+      left: 10%;
+      width: 70%;
+      height: 55%;
+      background-image: url("textbox.png");
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 35px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: none;
+      border-style: inset;
+
+    }
+    
+    body {
+         line-height: 150%;
+         font-size: 20px;
+   font-family: 'Lora', serif;
+         color: white;
+        }
+  </style>
+</head>
+<body>
+
+<!-- <audio controls>
+  <source src="CITY.mp3" type="audio/mpeg">
+</audio> -->
+  
+<a-scene >
+  <a-entity id="default_angle" camera position="0 0 0" look-controls wasd-controls> 
+  <a-cursor fuse="true" fuseTimeout="500"></a-cursor>
+</a-entity>
+
+  <a-box id="info" color="red" position="-13.7322 1.34974 0.1333" material="" geometry=""></a-box>
+  
+  <a-box id="portal" src="download-free-png-walk-through-the-red-door-for-autism-foundation-red-door-png-1740_3574.png" position="6.90586 0.67235 0.09199" material="" geometry="" scale="1.48 2.95 0.00001" rotation="0.25 -90 0"></a-box>
+
+  <a-sky src="Scene03.png"></a-sky>
+</a-scene>
+
+<div id="information" onclick="document.querySelector('#information').style.display = 'none';">
+  <h1>Pura Ulun Danu Beratan</h1>
+<!--   <h3>Lorem ipsum great building</h3> -->
+  <p> Pura Ulun Danu Beratan, or Pura Bratan, is a major Hindu Shaivite Shiva temple in Bali, Indonesia. The temple complex is on the shores of Lake Bratan in the mountains near Bedugul. The water from the lake serves the entire region in the outflow area; downstream there are many smaller water temples that are specific to each irrigation association (subak).</p>
+  <p>Built in 1633, the temple is used for offerings and ceremonies dedicated to the Balinese water, lake and river goddess Dewi Danu, due to the importance of Lake Bratan as a main source of irrigation in central Bali. The 11-storey pelinggih meru in the complex is dedicated to Shiva and his consort Parvathi. Buddha's statue is also enshrined in this temple. This temple is also called the "Bali temple on the Lake" because it looks as if it is floating when the Bratan River rises. </p>
+</div>
+
+<script>
+  var info = document.querySelector('#info');
+  var portal = document.querySelector('#portal');
+
+  info.addEventListener('fusing', function (evt) {
+      document.querySelector('#information').style.display = 'block';
+      evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
+      evt.target.setAttribute('color', 'green');
+   
+});
+  
+    portal.addEventListener('fusing', function (evt) {
+       location.replace('Scene04.html');
+
+  
+});
+  
+</script> 
+
+</body>
+</html>

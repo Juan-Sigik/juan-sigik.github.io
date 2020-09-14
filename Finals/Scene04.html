@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>04</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+  <style type="text/css">
+    #information{
+      position: fixed;
+      top: 20%;
+      left: 10%;
+      width: 70%;
+      height: 55%;
+      background-image: url("textbox.png");
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 35px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: none;
+      border-style: inset;
+
+    }
+    
+    body {
+         line-height: 150%;
+         font-size: 20px;
+   font-family: 'Lora', serif;
+         color: white;
+        }
+  </style>
+</head>
+<body>
+
+<!-- <audio controls>
+  <source src="CITY.mp3" type="audio/mpeg">
+</audio> -->
+  
+<a-scene >
+  <a-entity id="default_angle" camera position="0 0 0" look-controls wasd-controls> 
+  <a-cursor fuse="true" fuseTimeout="500"></a-cursor>
+</a-entity>
+
+  <a-box id="info" color="red" position="-21.09414 -0.1957 11.07959" material="" geometry=""></a-box>
+  
+  <a-box id="portal" src="download-free-png-walk-through-the-red-door-for-autism-foundation-red-door-png-1740_3574.png" position="7.70504 0.67235 -4.78618" material="" geometry="" scale="1.48 2.95 0.00001" rotation="0.25 -45 0"></a-box>
+
+  <a-sky src="Scene04.png"></a-sky>
+</a-scene>
+
+<div id="information" onclick="document.querySelector('#information').style.display = 'none';">
+  <h1>Prambanan</h1>
+<!--   <h3>Lorem ipsum great building</h3> -->
+  <p> A lagoon or lake is a saltwater lake that is usually located next to the ocean, and is formed due to abrasion by sea water. We can enjoy the beauty of this Love Lagoon by climbing to the top of the hill which is part of the natural tour packages that are served in Raja Ampat.</p>
+  <p>Although Misool island is not as popular as other main islands in Raja Ampat, this island is rich in natural beauty. Jellyfish lakes, beautiful beaches, lagoons, and uniquely shaped reefs are some of the treasures found in Misool.</p>
+</div>
+
+<script>
+  var info = document.querySelector('#info');
+  var portal = document.querySelector('#portal');
+
+  info.addEventListener('fusing', function (evt) {
+      document.querySelector('#information').style.display = 'block';
+      evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
+      evt.target.setAttribute('color', 'green');
+   
+});
+  
+    portal.addEventListener('fusing', function (evt) {
+       location.replace('Scene05.html');
+
+  
+});
+  
+</script> 
+
+</body>
+</html>
