@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aframe VR</title>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+
+<a-scene >
+	<a-entity camera position="0 0 0" look-controls wasd-controls> 
+	<a-cursor fuse=true fuseTimeout="500" ></a-cursor>
+</a-entity>
+
+
+<a-box id="left_box" src="lviv.png" position="1.87995 0 -5" scale="1.35 1 0.1"></a-box>
+<a-box id="right_box" src="indo.png" position="-2.09933 0 -5" scale="1.35 1 0.1"></a-box>
+  <a-sky color="lightblue"></a-sky>
+</a-scene>
+
+<div id="yes">0</div>
+
+<script>
+
+  var left_box = document.querySelector('#left_box');
+  var right_box = document.querySelector('#right_box');
+
+  
+
+  left_box.addEventListener('fusing', function (evt) {
+		evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
+		evt.target.setAttribute('color', 'white');
+  });
+
+  right_box.addEventListener('fusing', function (evt) {
+		evt.target.setAttribute('animation', 'property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true');
+		evt.target.setAttribute('color', 'white');
+  });
+
+</script> 
+
+</body>
+</html>
