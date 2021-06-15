@@ -1,0 +1,291 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+
+main {
+	margin: 0 auto;
+width: 414px;
+height: 896px;
+left: 0px;
+top: 0px;
+
+background: #CE3D4A;
+position: relative;
+}
+
+.back {
+
+background-image: url('../assets/arrow.png');
+background-size: cover;
+background-position: center;
+position: absolute;
+width: 33px;
+height: 24px;
+left: 37px;
+top: 64px;
+z-index: 999px;
+
+/*border: 3px solid #FFFFFF;*/
+box-sizing: border-box;
+/*transform: rotate(-180deg);*/}
+
+.pfp{
+	background-image: url('../assets/add profile.png');
+background-size: cover;
+background-position: center;
+position: absolute;
+width: 163px;
+height: 163px;
+left: 125px;
+top: 65px;
+
+/*background: #FFFFFF;
+border-radius: 285px;*/}
+
+.add {position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 245px;
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.name{
+	position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 326px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+opacity: 0.5;
+
+mix-blend-mode: normal;
+
+}
+
+.email{
+	position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 397px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+opacity: 0.5;
+
+mix-blend-mode: normal;
+}
+
+.address{
+position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 468px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+opacity: 0.5;
+
+mix-blend-mode: normal;
+}
+
+.number{
+	position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 536px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+opacity: 0.5;
+
+mix-blend-mode: normal;
+}
+
+.password
+{position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 607px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+opacity: 0.5;
+
+mix-blend-mode: normal;}
+
+.confirm{position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 678px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+opacity: 0.5;
+
+mix-blend-mode: normal;}
+
+.sign
+{position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 763px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 20px;
+align-items: center;
+text-align: center;
+z-index: 999;
+color: #CE3D4A;
+mix-blend-mode: normal;}
+
+.C1{position: absolute;
+width: 174px;
+height: 25px;
+left: 120px;
+top: 321px;
+border: 1px solid white;
+/*background: #FFFFFF;*/
+opacity: 0.5;
+border-radius: 20px;}
+
+.C2{position: absolute;
+width: 174px;
+height: 25px;
+left: 120px;
+top: 392px;
+
+border: 1px solid white;
+opacity: 0.5;
+border-radius: 20px;}
+
+.C3{position: absolute;
+width: 174px;
+height: 25px;
+left: 120px;
+top: 463px;
+
+border: 1px solid white;
+opacity: 0.5;
+border-radius: 20px;}
+
+.C4
+{position: absolute;
+width: 174px;
+height: 25px;
+left: 120px;
+top: 531px;
+
+border: 1px solid white;
+opacity: 0.5;
+border-radius: 20px;}
+
+.C5
+{position: absolute;
+width: 174px;
+height: 25px;
+left: 120px;
+top: 602px;
+
+border: 1px solid white;
+opacity: 0.5;
+border-radius: 20px;}
+
+.C6
+{position: absolute;
+width: 174px;
+height: 25px;
+left: 120px;
+top: 673px;
+
+border: 1px solid white;
+opacity: 0.5;
+border-radius: 20px;}
+
+.C7 
+{
+position: absolute;
+width: 128px;
+height: 39px;
+left: 143px;
+top: 754px;
+
+background: #FFFFFF;
+opacity: 1;
+border-radius: 20px;
+}
+
+
+
+

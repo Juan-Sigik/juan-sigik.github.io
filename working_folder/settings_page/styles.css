@@ -1,0 +1,403 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+
+main {
+	margin: 0 auto;
+width: 414px;
+height: 896px;
+left: 0px;
+top: 0px;
+
+background: #CE3D4A;
+position: relative;
+}
+
+.tab{     position: absolute;
+    width: 414px;
+    height: 875px;
+    left: -4px;
+    top: 91px;
+    background: rgb(255 255 255);
+    border-radius: 24px;
+    /* border: white; */
+    border: solid white; }
+
+.profile{
+
+		background-image: url('../assets/profile.png');
+background-size: cover;
+background-position: center;
+position: absolute;
+width: 145px;
+height: 145px;
+left: 134px;
+top: 24px;
+z-index: 999;
+
+/*background: #FFFFFF;
+border-radius: 255px*/}
+
+.arrow{
+
+background-image: url('../assets/arrow.png');
+background-size: cover;
+background-position: center;
+	position: absolute;
+width: 33px;
+height: 24px;
+left: 32px;
+top: 38px;
+z-index: 999;
+/*border: 3px solid #FFFFFF;*/
+box-sizing: border-box;
+/*transform: rotate(-180deg)*/} 
+
+.title{position: absolute;
+width: 196px;
+height: 71px;
+left: 63px;
+top: 196px;
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.I{position: absolute;
+    width: 340px;
+    height: 303px;
+    left: 37px;
+    top: 202px;
+    background: rgb(206 61 74);
+    border-radius: 28px;}
+
+.name{position: absolute;
+width: 196px;
+height: 71px;
+left: 65px;
+top: 257px;
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.cp{position: absolute;
+width: 196px;
+height: 71px;
+left: 65px;
+top: 277px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.email{position: absolute;
+width: 196px;
+height: 71px;
+left: 65px;
+top: 328px;
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.gm{position: absolute;
+width: 196px;
+height: 71px;
+left: 65px;
+top: 348px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.address{position: absolute;
+width: 196px;
+height: 71px;
+left: 65px;
+top: 399px;
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.ad{position: absolute;
+width: 252px;
+height: 71px;
+left: 65px;
+top: 425px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.II{
+    position: absolute;
+    width: 340px;
+    height: 259px;
+    left: 37px;
+    top: 527px;
+    background: rgb(206 61 74);
+    border-radius: 28px;}
+
+.C1{
+position: absolute;
+width: 196px;
+height: 71px;
+left: 59px;
+top: 615px;
+
+font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.C2{
+	position: absolute;
+width: 196px;
+height: 71px;
+left: 165px;
+top: 615px;
+
+font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;
+
+}
+
+.C3
+{
+position: absolute;
+width: 196px;
+height: 71px;
+left: 285px;
+top: 615px;
+
+font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;
+}
+
+.C4
+{position: absolute;
+width: 196px;
+height: 71px;
+left: 64px;
+top: 715px;
+
+font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.C5{position: absolute;
+width: 196px;
+height: 71px;
+left: 175px;
+top: 715px;
+
+font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.C6{
+position: absolute;
+width: 196px;
+height: 71px;
+left: 274px;
+top: 715px;
+
+font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.S1{
+
+	background-image: url('../assets/Contact 1.png');
+background-size: cover;
+background-position: center;
+position: absolute;
+width: 61px;
+height: 61px;
+left: 69px;
+top: 570px;
+
+/*background: #FFFFFF;
+border-radius: 255px*/}
+
+.S2{
+	background-image: url('../assets/Contact 2.png');
+background-size: cover;
+background-position:center;
+position: absolute;
+width: 61px;
+height: 61px;
+left: 177px;
+top: 570px;
+
+/*background: #FFFFFF;
+border-radius: 255px*/}
+
+.S3{
+	background-image: url('../assets/Contact 3.png');
+background-size: cover;
+background-position:center;
+	position: absolute;
+width: 61px;
+height: 61px;
+left: 284px;
+top: 570px;
+
+/*background: #FFFFFF;
+border-radius: 255px*/}
+
+.S4{
+	background-image: url('../assets/Contact 4.png');
+background-size: cover;
+background-position:center;
+	position: absolute;
+width: 61px;
+height: 61px;
+left: 69px;
+top: 670px;
+
+/*background: #FFFFFF;
+border-radius: 255px;*/
+}
+
+.S5{
+	background-image: url('../assets/Contact 5.png');
+background-size: cover;
+background-position:center;
+	position: absolute;
+width: 61px;
+height: 61px;
+left: 177px;
+top: 670px;
+
+/*background: #FFFFFF;
+border-radius: 255px;*/
+}
+
+.S6{background-image: url('../assets/Contact 6.png');
+background-size: cover;
+background-position:center;
+position: absolute;
+width: 61px;
+height: 61px;
+left: 284px;
+top: 670px;
+
+/*background: #FFFFFF;
+border-radius: 255px;*/
+}

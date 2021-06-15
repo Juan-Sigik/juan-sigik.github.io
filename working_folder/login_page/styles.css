@@ -1,0 +1,173 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+
+main {
+	margin: 0 auto;
+width: 414px;
+height: 896px;
+left: 0px;
+top: 0px;
+
+background:#CE3D4A;
+position: relative;
+}
+
+.box {
+	background-image: url('../assets/Logo.png');
+background-size: cover;
+background-position: center;
+	position: absolute;
+width: 255px;
+height: 255px;
+left: 80px;
+top: 122px;
+
+/*background: #C4C4C4;*/
+border-radius: 255px;
+}
+
+.name {
+position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 474px;
+
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+opacity: 0.5;
+
+mix-blend-mode: normal;
+}
+
+.nbox {position: absolute;
+width: 174px;
+height: 36px;
+left: 120px;
+top: 465px;
+
+border: 1px solid white;
+opacity: 0.5;
+border-radius: 20px;}
+
+.lbox {
+	position: absolute;
+width: 174px;
+height: 36px;
+left: 120px;
+top: 536px;
+
+border: 1px solid white;
+opacity: 0.5;
+border-radius: 20px;
+}
+
+.pbox {
+	position: absolute;
+width: 174px;
+height: 36px;
+left: 120px;
+top: 607px;
+
+border: 1px solid white;
+opacity: 0.5;
+border-radius: 20px;
+}
+
+.up { position: absolute;
+width: 196px;
+height: 71px;
+left: 118px;
+top: 813px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+opacity: 1;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal; }
+
+.password {
+	position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 617px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+opacity: 0.5;
+
+mix-blend-mode: normal;}
+
+.email {
+	position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 545px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+align-items: center;
+text-align: center;
+opacity: 0.5;
+color: #FFFEFE;
+
+mix-blend-mode: normal;}
+
+.login{
+	position: absolute;
+width: 196px;
+height: 71px;
+left: 109px;
+top: 762px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 20px;
+align-items: center;
+text-align: center;
+
+color: #CE3D4A;
+
+mix-blend-mode: normal;}
+
+.ibox{position: absolute;
+width: 128px;
+height: 39px;
+left: 143px;
+top: 754px;
+
+background: #FFFFFF;
+opacity: 1;
+border-radius: 20px;}

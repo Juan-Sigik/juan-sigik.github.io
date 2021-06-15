@@ -1,0 +1,174 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+
+main {
+	margin: 0 auto;
+width: 414px;
+height: 896px;
+left: 0px;
+top: 0px;
+
+background: #CE3D4A;
+position: relative;
+}
+
+.back{    background-image: url(../assets/arrow.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 33px;
+    height: 24px;
+    left: 37px;
+    top: 64px;
+    z-index: 999;
+    /* border: 3px solid #FFFFFF; */
+    box-sizing: border-box;
+}
+
+.add{position: absolute;
+width: 196px;
+height: 71px;
+left: 109px;
+top: 78px;
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFEFE;
+
+mix-blend-mode: normal;
+}
+
+.obox{
+	position: absolute;
+width: 318px;
+height: 576px;
+left: 48px;
+top: 149px;
+
+background: #FFFFFF;
+opacity: 0.5;
+border-radius: 20px;
+}
+
+
+
+.contacts{position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 200px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+opacity: 0.5;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+}
+
+.ibox{    position: absolute;
+    width: 234px;
+    height: 83px;
+    left: 96px;
+    top: 213px;
+    background: transparent;
+    border: 1px solid white;
+    opacity: 1;
+    border-radius: 20px;}
+
+
+.number{position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 235px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+opacity: 0.5;
+color: #FFFFFF;
+
+mix-blend-mode: normal;}
+
+.next {position: absolute;
+width: 196px;
+height: 71px;
+left: calc(50% - 98px);
+top: 763px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 20px;
+align-items: center;
+text-align: center;
+
+color: #CE3D4A;
+z-index: 999;
+
+mix-blend-mode: normal;
+}
+
+.plus{
+	background-image: url('../assets/add profile.png');
+	background-size: cover;
+	background-position: center;position: absolute;
+width: 60px;
+height: 60px;
+left: 177px;
+top: 357px;
+border-radius: 255px;
+
+
+
+/*background: #FFFFFF;*/}
+
+
+
+.nbox{position: absolute;
+width: 128px;
+height: 39px;
+left: 143px;
+top: 754px;
+
+background: #FFFFFF;
+opacity: 1;
+border-radius: 20px;}
+
+hr.line { 
+	position: absolute;
+    left: 96px;
+    top: 253px;
+    width: 236px;
+    /* border-color: white; */
+    border-top: 1px solid white;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    z-index: 999;
+}
